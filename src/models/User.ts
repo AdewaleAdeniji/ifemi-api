@@ -6,6 +6,7 @@ const userSchema = new Schema({
         type: String,
         default: ''
     },
+    username: String,
     status: {
         type: Boolean,
         default: true,
@@ -22,10 +23,20 @@ const userSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    partner: {
+        type: String,
+        default: '',
+    },
+    oldPartners: {
+        type: Array,
+        default: []
+    },
     lastLogin: {
         type: String,
         default: Date.now,
     },
+    firstname: String,
+    lastname: String,
     email: String,
     password: String,
     number: String,
