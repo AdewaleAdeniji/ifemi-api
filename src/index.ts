@@ -44,7 +44,7 @@ const lines = [
 
 const total = 30;
 
-const newLiner =  "I'm home, I want to rest a bit before reading. Might be asleep when you call back"
+const newLiner =  "Weldone babe, God will continually strengthen you!"
 
 app.get("/message/:kly", (req: any, res: Response)=> {
   const index = req.params.kly;
