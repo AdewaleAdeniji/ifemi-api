@@ -44,7 +44,7 @@ const lines = [
 
 const total = 30;
 
-const newLiner =  "i LOVE YOU SO much"
+const newLiner =  "Happy Thanksgiving Baby!"
 
 app.get("/message/:kly", (req: any, res: Response)=> {
   const index = req.params.kly;
