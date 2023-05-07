@@ -44,7 +44,7 @@ const lines = [
 
 const total = 30;
 
-const newLiner =  "You looked so beautiful today"
+const newLiner =  "You looked so beautiful today in church"
 
 app.get("/message/:kly", (req: any, res: Response)=> {
   const index = req.params.kly;
