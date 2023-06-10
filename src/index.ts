@@ -44,11 +44,12 @@ var lines = [
 
 const total = 30;
 
-const newLiner = "Happy Birthday in advance babe!";
+const newLiner = "Happy Birthday in advance, I Love you so much!";
 
 app.get("/message/:kly", (req: any, res: Response) => {
   const index = req.params.kly;
   console.log(index);
+  console.log(lines[index] || lines[0])
   res.status(200).send(lines[index] || lines[0]);
 });
 console.log(process.env.SOS)
@@ -69,6 +70,7 @@ app.get("/liner", async (_: any, res: Response) => {
   // } catch (err: any) {
   //   console.log(err?.status);
   // }
+  console.log(newLiner)
   res.status(200).send(newLiner);
 });
 
