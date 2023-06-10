@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const { Configuration, OpenAIApi } = require("openai");
 const cors = require("cors");
 import { Request, Response } from "express";
 
@@ -44,15 +45,32 @@ const lines = [
 
 const total = 30;
 
-const newLiner =  "Weldone babe, God will continually strengthen you!"
+const newLiner = "Happy Birthday in advance babe!";
 
-app.get("/message/:kly", (req: any, res: Response)=> {
+app.get("/message/:kly", (req: any, res: Response) => {
   const index = req.params.kly;
   console.log(index);
-  res.status(200).send(lines[index]||lines[0])
+  res.status(200).send(lines[index] || lines[0]);
 });
-app.get("/liner", (_: any, res: Response)=> {
-  res.status(200).send(newLiner)
+console.log(process.env.SOS)
+app.get("/liner", async (_: any, res: Response) => {
+  // const configuration = new Configuration({
+  //   apiKey: process.env.OPENAI_API_KEY,
+  // });
+  // const openai = new OpenAIApi(configuration);
+  // const convo = "generate a short pickup line for my girlfriend";
+  // try {
+  //   const completion = await openai.createCompletion({
+  //     model: "text-davinci-003",
+  //     prompt: convo,
+  //     temperature: 0.8,
+  //     max_tokens: 1024,
+  //   });
+  //   console.log(completion?.data?.choices);
+  // } catch (err: any) {
+  //   console.log(err?.status);
+  // }
+  res.status(200).send(newLiner);
 });
 
 app.get("*", (_: Request, res: Response) => {
