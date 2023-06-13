@@ -8,51 +8,52 @@ app.use(cors({ origin: "*" }));
 
 // greetings - love letters
 var lines = [
-  "I can't contain my excitement! Just a few days until your special day. Happy birthday in advance, my love!",
-  "Sending you early birthday wishes because I couldn't wait to start celebrating the amazing person you are!",
-  "I'm counting down the days until your birthday! Get ready for a celebration filled with love, surprises, and joy.",
-  "Consider this message a sneak peek into the birthday wishes and surprises I have in store for you. Happy early birthday, sweetheart!",
-  "Although it's in advance, I couldn't resist wishing the love of my life an incredibly happy birthday!",
-  "I wanted to be the first to wish you a happy birthday. Get ready for an unforgettable celebration!",
-  "Sending you early birthday hugs and kisses to let you know how excited I am for your special day. Happy birthday in advance!",
-  "I'm already in birthday mode, eagerly waiting for the day to celebrate the incredible woman you are. Happy early birthday!",
-  "Let the countdown begin! Your birthday is just around the corner, and I can't wait to make it the best one yet.",
-  "Birthdays should last a whole week, right? Consider this as the start of the week-long celebration of you. Happy early birthday, my love!",
-  "I couldn't wait to wish you a happy birthday, so here's an early celebration filled with love and warm wishes!",
-  "Even though your birthday is a few days away, I wanted to remind you that you're always in my thoughts and heart. Happy early birthday!",
-  "I'm sending you early birthday wishes because you deserve to feel loved and celebrated not just on your special day but every day!",
-  "Birthdays are meant to be celebrated, and I couldn't wait any longer to start the celebration for the most incredible person in my life. Happy early birthday!",
-  "Consider this early birthday wish a promise of the amazing surprises and moments we'll share when your special day arrives. Happy birthday in advance, my dear!",
-  "I couldn't keep my excitement contained. Here's an early birthday wish for the one who fills my life with love and happiness.",
-  "In advance, I want to shower you with love, happiness, and unforgettable memories. Happy early birthday, my gorgeous girlfriend!",
-  "I couldn't wait until your birthday to tell you how much you mean to me. You are loved, cherished, and celebrated every single day. Happy early birthday!",
-  "I'm sending early birthday wishes to ensure that the celebrations last longer and the happiness keeps growing. Get ready for an incredible birthday, my love!",
-  "To the love of my life, an early birthday wish filled with love, kisses, and warm embraces. Can't wait to celebrate with you!",
-  "Consider this early birthday message a token of my love and appreciation for the incredible person you are. Happy early birthday!",
-  "As your birthday approaches, I wanted to remind you how much you mean to me. Happy early birthday, my love!",
-  "I couldn't wait for your birthday to express how grateful I am to have you in my life. Wishing you a fantastic early birthday celebration!",
-  "Sending you early birthday wishes filled with love, laughter, and all the things that make you happy. Get ready for an incredible day!",
-  "I wanted to be the first one to wish you a happy birthday, even if it's in advance. You deserve all the love and joy coming your way!",
-  "Consider this early birthday wish a warm-up for the amazing surprises and moments that await you. Happy birthday in advance, sweetheart!",
-  "Although your birthday is still a few days away, I'm already in celebration mode. Get ready for a memorable and fun-filled birthday!",
-  "In anticipation of your special day, I'm sending you early birthday wishes wrapped in love, happiness, and excitement. Happy early birthday, my dear!",
-  "Your birthday is approaching, and my heart is filled with excitement. Here's an early toast to an incredible year ahead. Cheers and happy birthday in advance!",
-  "I couldn't wait to celebrate your birthday, so here's an early gesture of love and appreciation. Wishing you an amazing day filled with joy and laughter!",
-  "Happy early birthday to the one who lights up my world and fills my life with happiness. Get ready for a birthday celebration like no other!"
+  "Wishing you the happiest of birthdays in advance! Get ready for an amazing celebration!",
+  "Happy early birthday! May this coming year be filled with joy, love, and success for you!",
+  "Sending you warm birthday wishes in advance! May your special day be as wonderful as you are!",
+  "In advance, I wanted to let you know how lucky I am to have you in my life. Happy birthday, my love!",
+  "Birthdays are meant to be celebrated, so here's an early cheer to your upcoming special day! Have a fantastic birthday!",
+  "As your birthday approaches, I want to remind you how special and cherished you are. Happy early birthday, sweetheart!",
+  "Sending you early birthday wishes filled with love and happiness. Enjoy your day to the fullest!",
+  "It may be early, but I couldn't resist sending you birthday wishes in advance. You deserve all the best!",
+  "In advance of your birthday, I wanted to express my gratitude for having you in my life. You bring so much joy and happiness. Happy early birthday!",
+  "Here's to an early celebration of the incredible person you are. Wishing you a birthday filled with love, laughter, and beautiful moments!",
+  "Before the clock strikes midnight, I wanted to be the first to wish you a very happy birthday! Enjoy your special day in advance!",
+  "In advance of your birthday, I wanted to let you know how much you mean to me. You bring so much happiness into my life. Happy early birthday!",
+  "I couldn't wait to send you birthday wishes, so here they are in advance! May your day be filled with love, laughter, and unforgettable moments!",
+  "Happy early birthday to the most amazing person I know! Get ready for a birthday celebration like no other!",
+  "Before the official countdown begins, I wanted to send you early birthday greetings. May this year be your best one yet!",
+  "As your birthday approaches, know that you are in my thoughts and my heart. Wishing you a fantastic birthday in advance!",
+  "In advance of your special day, I wanted to send you early birthday wishes filled with love and happiness!",
+  "Happy early birthday to the one who makes every day brighter! May your birthday be as wonderful as you are!",
+  "As your birthday draws near, I can't help but feel excited to celebrate with you. Get ready for an incredible day in advance!",
+  "Wishing you a fantastic birthday in advance! May this year bring you endless blessings and happiness.",
+  "Sending you early birthday greetings to let you know how much you mean to me. You deserve the best celebration!",
+  "In advance of your birthday, I wanted to remind you of all the joy and love you bring into the world. Happy early birthday!",
+  "Before the calendar flips, I wanted to send you early birthday wishes filled with warmth and affection. Enjoy your special day!",
+  "Happy early birthday to the one who lights up my life! May your birthday be the start of a remarkable year ahead.",
+  "In anticipation of your birthday, I wanted to express my gratitude for having you in my life. You are a true blessing!",
+  "Wishing you a memorable and joyful birthday in advance! May all your dreams and wishes come true.",
+  "Sending you early birthday hugs and kisses! Get ready for an incredible celebration of you!",
+  "Before the birthday madness begins, I wanted to send you early wishes for a day filled with love, laughter, and happiness!",
+  "Happy early birthday to the most amazing person I know! May this upcoming year be your best one yet.",
+  "In advance of your special day, I wanted to remind you of how much you are loved and appreciated. Happy early birthday!",
+  "Before the birthday candles are lit, here's an early wish for a year filled with blessings and beautiful moments. Happy early birthday!",
+  "Wishing you a fantastic birthday in advance! May every moment of your special day be filled with joy and laughter.",
 ];
-
 
 const total = 30;
 
-const newLiner = "Happy Birthday in advance, I Love you so much!";
+const newLiner =
+  "Thanks so much for today! I'll be there no matter what, I'll be the PRIEST!";
 
 app.get("/message/:kly", (req: any, res: Response) => {
   const index = req.params.kly;
   console.log(index);
-  console.log(lines[index] || lines[0])
+  console.log(lines[index] || lines[0]);
   res.status(200).send(lines[index] || lines[0]);
 });
-console.log(process.env.SOS)
+console.log(process.env.SOS);
 app.get("/liner", async (_: any, res: Response) => {
   // const configuration = new Configuration({
   //   apiKey: process.env.OPENAI_API_KEY,
@@ -70,7 +71,7 @@ app.get("/liner", async (_: any, res: Response) => {
   // } catch (err: any) {
   //   console.log(err?.status);
   // }
-  console.log(newLiner)
+  console.log(newLiner);
   res.status(200).send(newLiner);
 });
 
