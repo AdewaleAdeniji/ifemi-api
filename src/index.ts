@@ -49,10 +49,30 @@ var lines = [
   "Sending you endless love and best wishes on your birthday. May this day mark the beginning of an extraordinary year ahead!",
   "Happy birthday to the one who brings so much joy and happiness into my life. You are my greatest gift and blessing!",
   "On this special day, I want you to know that you are loved beyond words and cherished beyond measure. Happy birthday, my love!",
-];
+  "I declare on your birthday that you will be like a tree planted in the fertile soil of God's favor. His divine opportunities will come your way, and you will walk in open doors and breakthroughs.",
+  "May your birthday be a time of divine elevation, where you are like a tree planted on a hill. Your influence will reach far and wide, and you will be a beacon of light in this world.",
+  "I prophesy on your birthday that you will be like a tree firmly anchored in God's peace. His tranquility will guard your heart and mind, and you will experience inner harmony and serenity.",
+  "As you celebrate your birthday, I declare that you will be like a tree planted by the living Word of God. Your understanding of His truth will deepen, and you will walk in wisdom and discernment.",
+  "On your birthday, I prophesy that you will be like a tree planted in the midst of God's miracles. Your life will be a testament to His supernatural power, and you will witness His mighty works.",
+  "I declare on your birthday that you will be like a tree planted in the fertile soil of God's guidance. Your steps will be directed by His Spirit, and you will walk in alignment with His perfect will.",
+  "May your birthday be a time of divine restoration, where you are like a tree planted by the streams of God's healing. His restoring touch will bring wholeness and wellness to every area of your life.",
+  "I prophesy on your birthday that you will be like a tree firmly established in God's love. His unconditional love will overflow in your heart, and you will extend grace and compassion to others.",
+  "As you celebrate your birthday, I declare that you will be like a tree planted in the garden of God's faithfulness. He will never leave you nor forsake you, and His faithfulness will sustain you.",
+  "On your birthday, I prophesy that you will be like a tree deeply rooted in God's promises. Your hope will be unwavering, and you will experience the fulfillment of His divine plans for your life.",
+  "I declare on your birthday that you will be like a tree planted in the fertile soil of God's provision. Your needs will be abundantly supplied, and you will lack no good thing.",
+  "May your birthday be a time of divine empowerment, where you are like a tree planted in the strength of the Lord. His power will flow through you, and you will accomplish great things in His name.",
+  "I prophesy on your birthday that you will be like a tree firmly grounded in God's joy. His presence will fill your heart with unspeakable joy, and your life will radiate His gladness and delight.",
+  "As you celebrate your birthday, I declare that you will be like a tree planted in the garden of God's purpose. Your life will be marked by significance and impact, fulfilling the calling He has placed upon you.",
+  "On your birthday, I prophesy that you will be like a tree deeply connected to God's presence. His Spirit will dwell in you richly, and you will experience His love and intimacy in a new and profound way.",
+  "I declare on your birthday that you will be like a tree planted in the fertile soil of God's blessings. His favor will rest upon you, and doors of opportunity will open before you.",
+  "May your birthday be a time of divine revelation, where you are like a tree planted in the wisdom of God. His insights and understanding will guide your path, and you will walk in divine clarity.",
+  "I prophesy on your birthday that you will be like a tree firmly rooted in God's righteousness. Your life will reflect His holiness, and you will walk in integrity and purity.",
+  "As you celebrate your birthday, I declare that you will be like a tree planted in the garden of God's grace. His unmerited favor will surround you, and you will experience His goodness in abundance.",
+  "On your birthday, I prophesy that you will be like a tree deeply anchored in God's peace. His tranquility will guard your heart and mind, and you will experience inner harmony and serenity."
+  ]  
 
 const total = 30;
-
+console.log(lines.length)
 const newLiner = "Happy Birthday Babe!";
 
 app.get("/message/:kly", (req: any, res: Response) => {
@@ -79,8 +99,11 @@ app.get("/liner", async (_: any, res: Response) => {
   // } catch (err: any) {
   //   console.log(err?.status);
   // }
-  console.log(newLiner);
-  res.status(200).send(newLiner);
+  const t  = new Date();
+  const minute  = t.getMinutes()
+  console.log('liner')
+  console.log(lines[minute]);
+  res.status(200).send(lines[minute]);
 });
 
 app.get("*", (_: Request, res: Response) => {
