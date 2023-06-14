@@ -73,7 +73,7 @@ var lines = [
 
 const total = 30;
 console.log(lines.length)
-const newLiner = "Happy Birthday Babe!";
+const newLiner = "Happy Birthday Babe!, I hope you're enjoying your day!";
 
 app.get("/message/:kly", (req: any, res: Response) => {
   const index = req.params.kly;
@@ -103,7 +103,7 @@ app.get("/liner", async (_: any, res: Response) => {
   const minute  = t.getMinutes()
   console.log('liner')
   console.log(lines[minute]);
-  res.status(200).send(lines[minute]);
+  res.status(200).send(newLiner);
 });
 
 app.get("*", (_: Request, res: Response) => {
